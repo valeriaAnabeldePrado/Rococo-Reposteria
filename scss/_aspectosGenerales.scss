@@ -1,0 +1,249 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+
+/*--------------------------------------------------------------
+# ASPECTOS GENERALES
+--------------------------------------------------------------*/
+
+*{
+    letter-spacing: 1.5px;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+    list-style:none;
+}
+h1 {
+    display: none;
+}
+
+.parrafoRandom {
+    text-align: center;
+    font-size: 1.2em; 
+    margin-bottom: 11.5vh;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .87em;
+    color: $coloresFuentesBody;
+}
+.parrafoMayuscula {
+    @include parrafosMayus;
+    text-align: center;
+}
+/*--------------------------------------------------------------
+# H2
+--------------------------------------------------------------*/
+h2 {
+    font-family: $h2-font;
+    padding-bottom: 10px;
+    font-size: 50px;
+    color: $h2-color;
+    text-align: center;
+}
+
+.subtitulosGenericos {
+    @include subtitulosH2A;
+    margin-top: 7vh;
+}
+
+
+.lineaArriba {
+    @include lineaArriba;
+}
+
+.h2conlineabaja {
+    border-bottom-style: groove; 
+    padding: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: Alex Brush, cursive; 
+    font-size: 50px;
+    margin-top: 50px;
+}
+.h2--distinto {
+    font-size: 50px;
+    margin: 20px;
+}
+.cardMenu {
+    margin-bottom: $espacioBottom2;
+}
+
+/*links*/
+ a {
+     color:  $h2-color;
+ }
+ a:hover {
+    color:  $h2-color;
+}
+
+
+/*--------------------------------------------------------------
+# Boton ramdom
+--------------------------------------------------------------*/
+
+.botonrandom {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: gray;
+    border-style: none;
+    box-shadow: 0px 3px 5px 0px gray;
+    a {
+        color: white;
+    }
+}
+
+.botones1 {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translatey(-50%);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	li {
+		a {
+			text-align: center;
+			padding: 0 15px;
+			color: $colorredes;
+			border-radius: 10%;
+			line-height: 50px;
+			font-size: 30px;
+			box-shadow: $boxShadow;
+			transition: 1.2s;
+			display: inline-block;
+			margin-bottom: 20px;
+			.fa-youtube {
+				font-size: 27px;
+			}
+            .fa-whatsapp {
+                font-size: 35px;
+            }
+            .fa-instagram {
+                font-size: 35px;
+            }
+			&:hover {
+				animation: botones1pulse 1000ms 1;
+				background-color: $colorredes;
+				color: #fff;
+				font-weight: bolder;
+			}
+		}
+	}
+}
+@keyframes botones1pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgb(182, 182, 182);
+    }
+    100% {
+      box-shadow: 0 0 8px 16px rgba(63, 63, 63, 0); /*con baja opacidad*/
+    }
+}
+
+
+ .botones2 {
+     text-align: center;
+     padding: 5px 20px;
+     text-transform: uppercase;
+     border-radius: 10%;
+     border-style: none;
+     font-size: 18px;
+     box-shadow: $boxShadow;
+	 transition: 1.2s;
+     color: rgb(255, 255, 255);
+     background-color: $colorredes;
+     &:hover {
+        @include botonesHover;
+        animation: shadow-pulse 1000ms 1;
+     }
+     @keyframes shadow-pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgb(182, 182, 182);
+        }
+        100% {
+          box-shadow: 0 0 8px 16px rgba(63, 63, 63, 0); /*con baja opacidad*/
+        }
+    }
+ }
+
+ .botones3 {
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    padding: 8px 28px;
+    text-transform: uppercase;
+    border-radius: 5%;
+    border: 5px solid  #fff;
+    font-size: 18px;
+    transition: 1.2s;
+    color: #fff;
+    background-color: transparent;
+    &:hover {
+       @include botonesHover;
+       animation: latido 1000ms 1;
+    }
+    @keyframes latido {
+       0% {
+         box-shadow: 0 0 0 0 rgb(238, 237, 237);
+       }
+       100% {
+         box-shadow: 0 0 8px 16px rgba(201, 200, 200, 0.205); /*con baja opacidad*/
+       }
+   }
+   
+}
+.botones3--texto {
+    color: $colorP;
+   
+}
+
+.botones4 {
+    @include botones4;
+
+}
+
+.btn-secondary {
+    background-color: $colorredes;
+    border-style: none;
+    transition: 1.2s;
+    &:hover {
+        box-shadow: $boxShadow;
+        background-color: #fff;
+        color: $colorredes;
+    }
+}
+
+/*-------------------------------------------------------------
+Cuerpos modales
+--------------------------------------------------------------*/
+.modal-content {
+    border: none;
+    .modal-header {
+        border-bottom: 2px solid $colorredes;
+        color: $colorFuente;
+    }
+    .modal-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img {
+            max-height: 70vh;
+            min-height: 40vh;
+        }
+        .modal-text {
+            max-width: 40vh;
+            min-width: 30vh;
+            margin-top: 30px;
+        }
+
+    }
+    .modal-footer {
+        border-top: 2px solid $colorredes;
+    }
+}
+
+
+

@@ -1,0 +1,192 @@
+@import "variables";
+/*para los botones*/   
+*:focus {
+    outline: 0 !important;
+}
+
+/*caja rosa*/
+
+.container-fluid {
+   margin: 0;
+   padding: 0;
+   max-height: 6vh;
+   min-height: 3vh;
+   display: flex;
+   align-items: center;
+}
+.haceTuPedido {
+	font-size: 14px;
+	margin-left: 30px;
+}
+.rosa {
+	background-color: $color-rosa-generico;
+	padding: 5px;
+	margin-top: 8.5vh;
+}
+.container-fluid--distindo {
+	background-color: white;
+	
+}
+
+
+
+
+/*--------------------------------------------------------------
+# MENU NUEVO
+--------------------------------------------------------------*/
+header {
+	background-color: $colorMenu;
+}
+.navbar {
+	padding: .6rem 0 .6rem 0;
+	
+}
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-style: none;
+    margin-right: 1em;
+	padding-bottom: .5rem;
+}
+.navbar-brand {
+	margin-left: 2rem;
+	.logoRococoIndex {
+		max-width: 2em;
+	}
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+	padding-bottom: 1rem;
+    align-items: center;
+	background-color: $colorMenu;
+}
+.navbar-nav {
+	position: relative;
+	right: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: end;
+    align-items: end;
+	
+	.nav-item {
+		margin-right: 2em;
+		margin: 5px;
+		.nav-link{
+			color: $colorFuente;
+			transition: .5s;
+			
+			&:hover {
+				color: $colorP;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.navbar-collapse {
+		padding-bottom: 0;
+		background-color: transparent;
+	}
+}
+ 
+
+/*--------------------------------------------------------------
+# BANNER
+--------------------------------------------------------------*/
+.contentBanner {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	.contentBanner__pasteleriaAutor {
+		margin-top: 60px;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		img {
+			margin-left: 10%;
+			padding: 40px;
+			height: 80vh;
+			margin-bottom: 10%;
+		}
+	}
+	.imagenBox {
+		.imagenBox__A {
+			height: 85vh;
+			
+		}
+	}
+	.botonesCake {
+		position: absolute;
+		top: 80%;
+		left: 40%;
+		bottom: 8%;
+		transform: translate(-50%);
+		display: flex;
+		li {
+			display: inline-block;
+			margin: 0 20px;
+			cursor: pointer;
+			transition: 0.5s;
+			&:hover {
+				transform: translateY(-15px);
+			}
+			img {
+				max-width: 90px;
+			}
+		}
+	}
+}
+.cake3 {
+	margin-top: 20%;
+}
+/*color del baner gradientes*/  
+.fondoBaner {
+ @include fondosbanner;
+}
+	
+
+/*El posicionamiento relativo para el padre, dentro de el puedo posicionar cualquier hijo
+en base a la posicion anterior del padre y se mueven con left, top, etc
+para posicionar un elemento en base a otro elemento se usa el position:absolute 
+el elemento que tomamos como referencia (padre) es el que tomamos como relativo, el padre
+si o si tiene que estar en relativo, sino toma al body como random
+Relative: para posicionar un elemento en un determinado lugar pero sin q este fijo*/  
+
+
+
+/*Borrar menu*/    
+.menu {
+	
+	position: fixed;
+	z-index: 5;
+	.logo {
+		width: 65px;
+	}
+	.nav-link {
+		margin-right: 10px;
+		font-size: 14px;
+	}
+}
+.menu--distinto {
+	font-size: 14px;
+	padding: 5px;
+	.logo {
+		width: 50px;
+	}
+	h4 {
+		font-size: 1em;
+	}
+}
+.navbar-brand--distinto {
+	margin-right: 10px;
+}
+
+
+
+
+

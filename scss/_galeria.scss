@@ -1,0 +1,210 @@
+/*EN ESTE SECTOR SE UBICAN LAS GALERIAS DEL SITIO WEB*/
+@import "variables";
+
+
+
+
+/*-------------------------------------------------
+---------------GALERIA CAKES-----------------------
+---------------------------------------------------*/
+.containerCakes {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-evenly;
+	margin-top: 30px;
+	.contenedorCakesPadre {
+		width: 200px;
+		display: flex;
+		flex-direction: column;
+		height: 70vh;
+		.itemCakes {
+			height: 300px;
+			width: 350px;
+			overflow: hidden; /*el padre: contenedor de la imagen tiene que tener definido el ancho y alto mas el overf hiden para q en el zoom no sobrepase*/
+			.itemImg {
+				width: 60%;
+				transition: 1.5s ease-in-out ;
+				&:hover {
+					transform: scale(1.5);
+				}
+			}
+		}
+		.itemText {
+			margin: 20px 0 15px;
+			h3 {
+				font-size: 1.2em;
+				text-align: center;
+				color: $coloresFuentesBody;
+			}
+		}
+		.botones4 {	
+			@include botones4;
+		}
+	}
+	
+	
+}
+
+
+/*-------------------------------------------------
+---------------CARD PARA REGALAR-------------------
+---------------------------------------------------*/
+.card {
+	border-style: none;
+}
+.contenedorCard {
+	position: relative;
+	top: $espaciosTop2;
+	margin-bottom: $espacioBottom2;
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		.contenedorCard__box--Img {
+			max-width: 700px;
+			box-shadow: $boxShadow;
+		}
+		.contenedorCard__box--Img--distinto {
+			max-width: 600px;
+			box-shadow: $boxShadow;
+		}
+	}
+	&__regalar--text {
+		width: 400px;
+		display: flex;
+		flex-direction: column;
+		.botones4 {
+			width: 20vh;
+			align-self: flex-start;
+			margin: 2.5rem 0;
+		}
+		&::before {
+			content: "";
+			width: 80px;
+			padding: 4px;
+			background-color: $colorredes;
+			margin-bottom: .8rem;
+		}
+		.contenedorCard__regalar--p {
+			color: rgb(224, 137, 137);
+			margin-bottom: 1rem;
+		}
+		h3 {
+			color: $coloresFuentesBody;
+			font-size: 26.8px;
+		}
+	}
+	
+}
+/*-------------------------------------------------
+---------------GALERIA SECCION PARA REGALAR--------
+---------------------------------------------------*/
+.galeriaregalar {
+	position: relative;
+	top: $espaciosTop2;
+	&__contenedor {
+		margin: 1rem;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+		gap: 2rem;
+		&::after {
+			content: "";
+			padding: 5vh;
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		transition: 1.5s ease-in-out ;
+	}
+	&__contenedorimagen {
+		overflow: hidden;
+		box-shadow: $boxShadow;
+		.galeriaregalar__img:hover {
+			transform: scale(1.5)
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ .btn-danger {
+    background-color: #ee95a586 !important;
+    color: black;
+ }
+
+.containerPadre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.menuContainer {
+		position: relative;
+		width: 1100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		.card {
+			background: $colorredes;
+			position: relative;
+			max-width: 300px;
+			height: 270px;
+			margin: 30px 10px;
+			margin-bottom: $espacioBottom3;
+			display: flex;
+			flex-direction: column;
+			box-shadow: $boxShadow;
+			transition: 0.3s ease-in-out;
+			.imagenCard {
+				position: relative;
+				width: 260px;
+				height: 260px;
+				top: -100px; /*sube la imagen*/
+				left: 20px;
+				box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+				z-index: 1;
+				img {
+					max-width: 100%;
+					border-radius: 4px;
+
+				}
+			}
+			.contenidoText {
+				position: relative;
+				margin-top: -170px; /*baja el texto*/
+				text-align: center;
+				visibility: hidden;
+				opacity: 0;
+				transition: 0.3s ease-in-out;
+			}
+		}
+	}
+}
+.menuContainer .card:hover {
+	height: 440px;
+}
+.menuContainer .card:hover .contenidoText {
+	visibility: visible;
+	opacity: 1;
+	margin-top:  -0px; /*baja el texto*/  
+	transition-delay: 0.3s;
+	color: #fff;
+	p {
+		color: #fff;
+		margin-bottom: 2em;
+	}
+}
+
+

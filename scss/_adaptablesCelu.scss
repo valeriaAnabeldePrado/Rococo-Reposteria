@@ -1,0 +1,101 @@
+@import "variables";
+@import "each";
+
+/*index*/
+
+@media screen and (max-width: 900px) {
+    .banner {
+        height: 300px;
+    }
+    .banner__pasteleriadeautor { 
+        display: none;
+    }    
+    .banner__imagen {
+        display: none;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .articlesobremi .articlesobremi__tatiana {
+        width: auto;
+        height: 500px; 
+        margin-bottom: 40px;
+        }
+        .articlesobremi .articlesobremi__textoSobreMi {
+            padding: 20px;
+            width: 400px;
+            height: auto;
+            margin-top: 20px;
+        }
+    
+}
+ 
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 35px !important; /*si no le pongo !important no me cambia el tamaño*/ 
+    }
+    p {
+        font-size: 12px;
+    }
+    li {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .navbar-brand--distinto {
+        display: none;
+    }
+    .banner__pasteleriadeautor {
+        display: none;
+    }    
+    .banner {
+        height: 250px;
+    }
+    
+    .contenedortestimonios {
+        font-size: 12px;
+    }
+    
+   .h3footer {
+       font-size: 12px;
+   }
+   .navbar-nav {
+       font-size: 12px;
+   }
+   .articlesobremi .articlesobremi__tatiana {
+    width: auto;
+    height: 380px; 
+    }
+    /*Galeria cakes*/
+    .itemText {
+        padding: 10px;
+      }
+     
+    .seccionFooterParrafos {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    /*seccion para regalar img*/
+	.cakeRococo--distinto {
+		margin-left: 0px !important; /*no me toma el cambio sin el !important*/
+		margin-top: 50px;
+	}
+    /*seccion recetas*/
+    .cakeRococo {
+        margin-left: 0px !important; /*no me toma el cambio sin el !important*/
+    }
+    img {
+        width: 300px;
+    }
+    .divfooter {
+        font-size: 12px;
+    }
+    .redescontainer {
+        margin-bottom: 20px;
+    }
+    
+
+}
+

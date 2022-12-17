@@ -1,0 +1,1225 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+/*--------------------------------------------------------------
+# FONT SIZES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS BAJO
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS ALTOS-TOP
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# AREA DE MIXIN
+--------------------------------------------------------------*/
+/*Para algunos H2*/
+/*BOTONES*/
+/*Fondos*/
+/*Footers*/
+/*Area de fuentes*/
+/*Display*/
+/*Tajetas de recetas*/
+/*para los botones*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+*:focus {
+  outline: 0 !important; }
+
+/*caja rosa*/
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  max-height: 6vh;
+  min-height: 3vh;
+  display: flex;
+  align-items: center; }
+
+.haceTuPedido {
+  font-size: 14px;
+  margin-left: 30px; }
+
+.rosa {
+  background-color: #eea7b457;
+  padding: 5px;
+  margin-top: 8.5vh; }
+
+.container-fluid--distindo {
+  background-color: white; }
+
+/*--------------------------------------------------------------
+# MENU NUEVO
+--------------------------------------------------------------*/
+header {
+  background-color: rgba(255, 255, 255, 0.911); }
+
+.navbar {
+  padding: .6rem 0 .6rem 0; }
+
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-style: none;
+  margin-right: 1em;
+  padding-bottom: .5rem; }
+
+.navbar-brand {
+  margin-left: 2rem; }
+  .navbar-brand .logoRococoIndex {
+    max-width: 2em; }
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+  padding-bottom: 1rem;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.911); }
+
+.navbar-nav {
+  position: relative;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: end;
+  align-items: end; }
+  .navbar-nav .nav-item {
+    margin-right: 2em;
+    margin: 5px; }
+    .navbar-nav .nav-item .nav-link {
+      color: #420d3e;
+      transition: .5s; }
+      .navbar-nav .nav-item .nav-link:hover {
+        color: #fd99ac; }
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    padding-bottom: 0;
+    background-color: transparent; } }
+
+/*--------------------------------------------------------------
+# BANNER
+--------------------------------------------------------------*/
+.contentBanner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .contentBanner .contentBanner__pasteleriaAutor {
+    margin-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
+    .contentBanner .contentBanner__pasteleriaAutor img {
+      margin-left: 10%;
+      padding: 40px;
+      height: 80vh;
+      margin-bottom: 10%; }
+  .contentBanner .imagenBox .imagenBox__A {
+    height: 85vh; }
+  .contentBanner .botonesCake {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    bottom: 8%;
+    transform: translate(-50%);
+    display: flex; }
+    .contentBanner .botonesCake li {
+      display: inline-block;
+      margin: 0 20px;
+      cursor: pointer;
+      transition: 0.5s; }
+      .contentBanner .botonesCake li:hover {
+        transform: translateY(-15px); }
+      .contentBanner .botonesCake li img {
+        max-width: 90px; }
+
+.cake3 {
+  margin-top: 20%; }
+
+/*color del baner gradientes*/
+.fondoBaner {
+  background: white;
+  background: linear-gradient(13deg, white 48%, rgba(255, 224, 230, 0.745833) 74%, #ffe6e8 100%); }
+
+/*El posicionamiento relativo para el padre, dentro de el puedo posicionar cualquier hijo
+en base a la posicion anterior del padre y se mueven con left, top, etc
+para posicionar un elemento en base a otro elemento se usa el position:absolute 
+el elemento que tomamos como referencia (padre) es el que tomamos como relativo, el padre
+si o si tiene que estar en relativo, sino toma al body como random
+Relative: para posicionar un elemento en un determinado lugar pero sin q este fijo*/
+/*Borrar menu*/
+.menu {
+  position: fixed;
+  z-index: 5; }
+  .menu .logo {
+    width: 65px; }
+  .menu .nav-link {
+    margin-right: 10px;
+    font-size: 14px; }
+
+.menu--distinto {
+  font-size: 14px;
+  padding: 5px; }
+  .menu--distinto .logo {
+    width: 50px; }
+  .menu--distinto h4 {
+    font-size: 1em; }
+
+.navbar-brand--distinto {
+  margin-right: 10px; }
+
+/*--------------------------------------------------------------
+# FONT SIZES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS BAJO
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS ALTOS-TOP
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# AREA DE MIXIN
+--------------------------------------------------------------*/
+/*Para algunos H2*/
+/*BOTONES*/
+/*Fondos*/
+/*Footers*/
+/*Area de fuentes*/
+/*Display*/
+/*Tajetas de recetas*/
+/*--------------------------------------------------------------
+# FONT SIZES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS BAJO
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS ALTOS-TOP
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# AREA DE MIXIN
+--------------------------------------------------------------*/
+/*Para algunos H2*/
+/*BOTONES*/
+/*Fondos*/
+/*Footers*/
+/*Area de fuentes*/
+/*Display*/
+/*Tajetas de recetas*/
+/*--------------------------------------------------------------
+# ASPECTOS GENERALES
+--------------------------------------------------------------*/
+* {
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none !important;
+  list-style: none; }
+
+h1 {
+  display: none; }
+
+.parrafoRandom {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 11.5vh; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .87em;
+  color: gray; }
+
+.parrafoMayuscula {
+  color: #fff;
+  font-size: 3.75em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center; }
+
+/*--------------------------------------------------------------
+# H2
+--------------------------------------------------------------*/
+h2 {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+  font-size: 50px;
+  color: #420d3e;
+  text-align: center; }
+
+.subtitulosGenericos {
+  color: gray;
+  text-align: center;
+  font-size: 3.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5em;
+  margin: 3rem 0 5rem;
+  margin-top: 7vh; }
+
+.lineaArriba {
+  border-style: double none none;
+  border-width: 7px 0px 7px 0px;
+  border-color: #f0c4c4;
+  margin: 40px;
+  padding-top: 20px; }
+
+.h2conlineabaja {
+  border-bottom-style: groove;
+  padding: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: Alex Brush, cursive;
+  font-size: 50px;
+  margin-top: 50px; }
+
+.h2--distinto {
+  font-size: 50px;
+  margin: 20px; }
+
+.cardMenu {
+  margin-bottom: 16.5vh; }
+
+/*links*/
+a {
+  color: #420d3e; }
+
+a:hover {
+  color: #420d3e; }
+
+/*--------------------------------------------------------------
+# Boton ramdom
+--------------------------------------------------------------*/
+.botonrandom {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: gray;
+  border-style: none;
+  box-shadow: 0px 3px 5px 0px gray; }
+  .botonrandom a {
+    color: white; }
+
+.botones1 {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translatey(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .botones1 li a {
+    text-align: center;
+    padding: 0 15px;
+    color: #f0c4c4;
+    border-radius: 10%;
+    line-height: 50px;
+    font-size: 30px;
+    box-shadow: 0px 3px 5px 0px rgba(128, 128, 128, 0.589);
+    transition: 1.2s;
+    display: inline-block;
+    margin-bottom: 20px; }
+    .botones1 li a .fa-youtube {
+      font-size: 27px; }
+    .botones1 li a .fa-whatsapp {
+      font-size: 35px; }
+    .botones1 li a .fa-instagram {
+      font-size: 35px; }
+    .botones1 li a:hover {
+      animation: botones1pulse 1000ms 1;
+      background-color: #f0c4c4;
+      color: #fff;
+      font-weight: bolder; }
+
+@keyframes botones1pulse {
+  0% {
+    box-shadow: 0 0 0 0 #b6b6b6; }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(63, 63, 63, 0);
+    /*con baja opacidad*/ } }
+
+.botones2 {
+  text-align: center;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  border-radius: 10%;
+  border-style: none;
+  font-size: 18px;
+  box-shadow: 0px 3px 5px 0px rgba(128, 128, 128, 0.589);
+  transition: 1.2s;
+  color: white;
+  background-color: #f0c4c4; }
+  .botones2:hover {
+    background-color: white;
+    color: #f0c4c4;
+    font-weight: 600;
+    animation: shadow-pulse 1000ms 1; }
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #b6b6b6; }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(63, 63, 63, 0);
+    /*con baja opacidad*/ } }
+
+.botones3 {
+  position: absolute;
+  top: 75%;
+  text-align: center;
+  padding: 8px 28px;
+  text-transform: uppercase;
+  border-radius: 5%;
+  border: 5px solid  #fff;
+  font-size: 18px;
+  transition: 1.2s;
+  color: #fff;
+  background-color: transparent; }
+  .botones3:hover {
+    background-color: white;
+    color: #f0c4c4;
+    font-weight: 600;
+    animation: latido 1000ms 1; }
+
+@keyframes latido {
+  0% {
+    box-shadow: 0 0 0 0 #eeeded; }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(201, 200, 200, 0.205);
+    /*con baja opacidad*/ } }
+
+.botones3--texto {
+  color: #fd99ac; }
+
+.botones4 {
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 5%;
+  border: 2px solid #f0c4c4;
+  color: #f0c4c4;
+  font-size: 18px;
+  transition: 800ms font ease-in-out;
+  background-color: transparent; }
+  .botones4:hover {
+    background-color: white;
+    color: #f0c4c4;
+    font-weight: 600;
+    animation: pitido 800ms; }
+
+@keyframes pitido {
+  0% {
+    box-shadow: 0 0 0 0 #f0c4c4; }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(124, 124, 124, 0.034); } }
+
+.btn-secondary {
+  background-color: #f0c4c4;
+  border-style: none;
+  transition: 1.2s; }
+  .btn-secondary:hover {
+    box-shadow: 0px 3px 5px 0px rgba(128, 128, 128, 0.589);
+    background-color: #fff;
+    color: #f0c4c4; }
+
+/*-------------------------------------------------------------
+Cuerpos modales
+--------------------------------------------------------------*/
+.modal-content {
+  border: none; }
+  .modal-content .modal-header {
+    border-bottom: 2px solid #f0c4c4;
+    color: #420d3e; }
+  .modal-content .modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .modal-content .modal-body img {
+      max-height: 70vh;
+      min-height: 40vh; }
+    .modal-content .modal-body .modal-text {
+      max-width: 40vh;
+      min-width: 30vh;
+      margin-top: 30px; }
+  .modal-content .modal-footer {
+    border-top: 2px solid #f0c4c4; }
+
+/*EN ESTE SECTOR SE UBICAN LAS GALERIAS DEL SITIO WEB*/
+/*--------------------------------------------------------------
+# FONT SIZES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS BAJO
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS ALTOS-TOP
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# AREA DE MIXIN
+--------------------------------------------------------------*/
+/*Para algunos H2*/
+/*BOTONES*/
+/*Fondos*/
+/*Footers*/
+/*Area de fuentes*/
+/*Display*/
+/*Tajetas de recetas*/
+/*-------------------------------------------------
+---------------GALERIA CAKES-----------------------
+---------------------------------------------------*/
+.containerCakes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 30px; }
+  .containerCakes .contenedorCakesPadre {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 70vh; }
+    .containerCakes .contenedorCakesPadre .itemCakes {
+      height: 300px;
+      width: 350px;
+      overflow: hidden;
+      /*el padre: contenedor de la imagen tiene que tener definido el ancho y alto mas el overf hiden para q en el zoom no sobrepase*/ }
+      .containerCakes .contenedorCakesPadre .itemCakes .itemImg {
+        width: 60%;
+        transition: 1.5s ease-in-out; }
+        .containerCakes .contenedorCakesPadre .itemCakes .itemImg:hover {
+          transform: scale(1.5); }
+    .containerCakes .contenedorCakesPadre .itemText {
+      margin: 20px 0 15px; }
+      .containerCakes .contenedorCakesPadre .itemText h3 {
+        font-size: 1.2em;
+        text-align: center;
+        color: gray; }
+    .containerCakes .contenedorCakesPadre .botones4 {
+      padding: 8px;
+      text-transform: uppercase;
+      border-radius: 5%;
+      border: 2px solid #f0c4c4;
+      color: #f0c4c4;
+      font-size: 18px;
+      transition: 800ms font ease-in-out;
+      background-color: transparent; }
+      .containerCakes .contenedorCakesPadre .botones4:hover {
+        background-color: white;
+        color: #f0c4c4;
+        font-weight: 600;
+        animation: pitido 800ms; }
+
+@keyframes pitido {
+  0% {
+    box-shadow: 0 0 0 0 #f0c4c4; }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(124, 124, 124, 0.034); } }
+
+/*-------------------------------------------------
+---------------CARD PARA REGALAR-------------------
+---------------------------------------------------*/
+.card {
+  border-style: none; }
+
+.contenedorCard {
+  position: relative;
+  top: 9vh;
+  margin-bottom: 16.5vh; }
+  .contenedorCard__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly; }
+    .contenedorCard__box .contenedorCard__box--Img {
+      max-width: 700px;
+      box-shadow: 0px 3px 5px 0px rgba(128, 128, 128, 0.589); }
+    .contenedorCard__box .contenedorCard__box--Img--distinto {
+      max-width: 600px;
+      box-shadow: 0px 3px 5px 0px rgba(128, 128, 128, 0.589); }
+  .contenedorCard__regalar--text {
+    width: 400px;
+    display: flex;
+    flex-direction: column; }
+    .contenedorCard__regalar--text .botones4 {
+      width: 20vh;
+      align-self: flex-start;
+      margin: 2.5rem 0; }
+    .contenedorCard__regalar--text::before {
+      content: "";
+      width: 80px;
+      padding: 4px;
+      background-color: #f0c4c4;
+      margin-bottom: .8rem; }
+    .contenedorCard__regalar--text .contenedorCard__regalar--p {
+      color: #e08989;
+      margin-bottom: 1rem; }
+    .contenedorCard__regalar--text h3 {
+      color: gray;
+      font-size: 26.8px; }
+
+/*-------------------------------------------------
+---------------GALERIA SECCION PARA REGALAR--------
+---------------------------------------------------*/
+.galeriaregalar {
+  position: relative;
+  top: 9vh; }
+  .galeriaregalar__contenedor {
+    margin: 1rem;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 2rem; }
+    .galeriaregalar__contenedor::after {
+      content: "";
+      padding: 5vh; }
+  .galeriaregalar__img {
+    width: 100%;
+    height: 100%;
+    transition: 1.5s ease-in-out; }
+  .galeriaregalar__contenedorimagen {
+    overflow: hidden;
+    box-shadow: 0px 3px 5px 0px rgba(128, 128, 128, 0.589); }
+    .galeriaregalar__contenedorimagen .galeriaregalar__img:hover {
+      transform: scale(1.5); }
+
+.btn-danger {
+  background-color: #ee95a586 !important;
+  color: black; }
+
+.containerPadre {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .containerPadre .menuContainer {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .containerPadre .menuContainer .card {
+      background: #f0c4c4;
+      position: relative;
+      max-width: 300px;
+      height: 270px;
+      margin: 30px 10px;
+      margin-bottom: 12.3vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 3px 5px 0px rgba(128, 128, 128, 0.589);
+      transition: 0.3s ease-in-out; }
+      .containerPadre .menuContainer .card .imagenCard {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        top: -100px;
+        /*sube la imagen*/
+        left: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        z-index: 1; }
+        .containerPadre .menuContainer .card .imagenCard img {
+          max-width: 100%;
+          border-radius: 4px; }
+      .containerPadre .menuContainer .card .contenidoText {
+        position: relative;
+        margin-top: -170px;
+        /*baja el texto*/
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out; }
+
+.menuContainer .card:hover {
+  height: 440px; }
+
+.menuContainer .card:hover .contenidoText {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -0px;
+  /*baja el texto*/
+  transition-delay: 0.3s;
+  color: #fff; }
+  .menuContainer .card:hover .contenidoText p {
+    color: #fff;
+    margin-bottom: 2em; }
+
+/*--------------------------------------------------------------
+# FONT SIZES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS BAJO
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS ALTOS-TOP
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# AREA DE MIXIN
+--------------------------------------------------------------*/
+/*Para algunos H2*/
+/*BOTONES*/
+/*Fondos*/
+/*Footers*/
+/*Area de fuentes*/
+/*Display*/
+/*Tajetas de recetas*/
+footer {
+  height: 40vh;
+  background-color: #f0c4c4;
+  margin-top: 13.8vh;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  footer h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 3rem; }
+  footer .redescontainer {
+    margin-left: 1rem; }
+  footer .h3footer--distinto {
+    align-self: center;
+    text-align: center; }
+
+.seccionFooterParrafos {
+  color: white;
+  margin-left: 40px; }
+
+/*botones me ayude con youtube*/
+.redescontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100px;
+  text-align: center; }
+  .redescontainer ul li {
+    display: inline-block;
+    margin: 5px;
+    margin-right: 40px;
+    width: 50px;
+    height: 20px;
+    text-align: center; }
+    .redescontainer ul li a {
+      display: block;
+      padding: 0 10px;
+      background-color: gray;
+      color: white;
+      line-height: 50px;
+      font-size: 18px;
+      box-shadow: 0px 3px 5px 0px gray;
+      transition: 1.2s; }
+
+.redescontainer ul:hover a {
+  filter: blur(2px); }
+
+.redescontainer ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: none; }
+
+/*--------------------------------------------------------------
+# FONT SIZES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS BAJO
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS ALTOS-TOP
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# AREA DE MIXIN
+--------------------------------------------------------------*/
+/*Para algunos H2*/
+/*BOTONES*/
+/*Fondos*/
+/*Footers*/
+/*Area de fuentes*/
+/*Display*/
+/*Tajetas de recetas*/
+/*-------------------------------------------------
+---------------CUERPO INDEX---------------------
+---------------------------------------------------*/
+.primerContenedor__index {
+  background-color: #f0c4c4;
+  height: 45vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .primerContenedor__index--text {
+    padding: 2rem 3rem 3rem 3rem;
+    width: 60%;
+    border: 10px solid #fff;
+    border-width: 0 0 0 10px; }
+    .primerContenedor__index--text h2 {
+      color: #fff;
+      text-align: start;
+      text-transform: uppercase; }
+    .primerContenedor__index--text p {
+      color: #fff;
+      font-size: 20.8px; }
+  .primerContenedor__index--img {
+    height: 20vh; }
+
+/*-------------------------------------------------
+---------------SECCIÓN RECETAS---------------------
+---------------------------------------------------*/
+.seccion__parrafo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; }
+  .seccion__parrafo h3 {
+    font-size: 1.3em;
+    text-align: center;
+    color: gray;
+    border: 10px solid #f0c4c4;
+    border-width: 0 10px 0;
+    padding: 2rem; }
+
+/*-------------------------------------------------
+---------------SECCIÓN PREGUNTAS FRECUENTES--------
+---------------------------------------------------*/
+.contenedor_preguntas {
+  position: relative;
+  top: 9vh; }
+  .contenedor_preguntas--box {
+    height: 100%; }
+    .contenedor_preguntas--box .contenedor_preguntas--item {
+      color: gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 20vh;
+      border: 10px solid #f0c4c4;
+      border-width: 0 10px 0;
+      padding: 0 2rem 0;
+      margin-bottom: 10vh; }
+      .contenedor_preguntas--box .contenedor_preguntas--item .contenedor_preguntas--a {
+        font-weight: bold;
+        font-size: 1.2em;
+        transition: color 1s; }
+        .contenedor_preguntas--box .contenedor_preguntas--item .contenedor_preguntas--a:hover {
+          color: #f0c4c4; }
+
+.preguntas_box2 {
+  position: relative;
+  height: 10vh;
+  display: flex;
+  justify-content: center; }
+  .preguntas_box2 p {
+    position: absolute;
+    top: 100px;
+    font-size: 1.4em;
+    color: #420d3e; }
+  .preguntas_box2 .botones4 {
+    text-transform: none; }
+    .preguntas_box2 .botones4:hover {
+      font-weight: normal; }
+
+/*-------------------------------------------------
+---------------SECCIÓN CONTACTO--------------------
+---------------------------------------------------*/
+.container__padre {
+  margin-top: 4.1em;
+  height: 92vh;
+  background-image: url(../img/pattern6.jpg);
+  background-size: cover; }
+  .container__padre .formulario {
+    margin: 2em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .container__padre .formulario .form {
+      width: 50vh;
+      height: auto;
+      padding: 3rem;
+      border-radius: 5px;
+      background-color: #8a888846;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(20px); }
+      .container__padre .formulario .form__container {
+        display: flex;
+        gap: 1em;
+        flex-direction: column; }
+        .container__padre .formulario .form__container .form__titulo {
+          margin: .7em 0 .7em;
+          text-align: center;
+          color: #fff; }
+        .container__padre .formulario .form__container .form__input {
+          border-radius: 5px;
+          padding: 1em 1.2em;
+          outline: none;
+          border: none; }
+        .container__padre .formulario .form__container .form__input--messaje {
+          height: 10em;
+          resize: none; }
+        .container__padre .formulario .form__container .form__cta {
+          padding: .5em;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: #fff;
+          font-weight: bold;
+          color: rgba(128, 128, 128, 0.644);
+          transition: border 800ms ease-in-out; }
+          .container__padre .formulario .form__container .form__cta:hover {
+            animation: shadow-pulse 800ms; }
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff; }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(235, 185, 185, 0.089);
+    /*con baja opacidad*/ } }
+
+.item--contacto {
+  max-width: 100%;
+  padding-left: 3em;
+  height: 20vh;
+  margin: 5rem;
+  display: flex;
+  align-items: center; }
+  .item--contacto h4 {
+    color: gray;
+    width: 60%;
+    padding: 3rem;
+    font-size: 1.3em;
+    border: 10px solid #f0c4c4;
+    border-width: 0 0 0 10px; }
+
+.footer__contacto {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .footer__contacto--itemA {
+    color: #fff; }
+  .footer__contacto p {
+    color: #fff; }
+
+/*contenedor redes contacto*/
+.redescontainer--distinto {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 100px;
+  margin-top: 40px; }
+  .redescontainer--distinto--redes--item {
+    display: inline-block;
+    margin: 5px;
+    margin-right: 40px;
+    width: 50px;
+    height: 20px;
+    text-align: center; }
+    .redescontainer--distinto--redes--item .boton {
+      display: block;
+      padding: 0.06em 10px;
+      background-color: gray;
+      color: white;
+      line-height: 50px;
+      font-size: 18px;
+      box-shadow: 0px 3px 5px 0px gray;
+      transition: 1.2s; }
+    .redescontainer--distinto--redes--item .boton--distinto {
+      display: block;
+      padding: 0.06em 10px;
+      background-color: gray;
+      color: white;
+      line-height: 50px;
+      font-size: 18px;
+      box-shadow: 0px 3px 5px 0px gray;
+      transition: 1.2s;
+      outline: none;
+      border-style: none;
+      padding: .05em .9em; }
+
+.redescontainer--distinto2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 60px;
+  margin-top: 40px;
+  gap: 50px; }
+  .redescontainer--distinto2 .btn--distinto {
+    display: block;
+    border-style: none;
+    padding: 0 18px;
+    background-color: gray;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 3px 5px 0px gray;
+    transition: 1.2s; }
+
+/*---------------------fondos--------------------*/
+.fondoIndex {
+  background: linear-gradient(to right, #706d6f9d, #22212194), url("../img/banner2.jpg");
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-position: 40% 40%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .fondoIndex .fondoIndex__parrafo {
+    color: #fff;
+    font-size: 3.75em;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .fondoIndex .fondoIndex__parrafo2 {
+    color: #fff;
+    font-size: 2em; }
+
+.fondoInde--2 {
+  position: relative;
+  background: linear-gradient(to right, #706d6f44, #22212128), url("../img/backfooter2.jpg");
+  background-attachment: fixed;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-position: 40% 40%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .fondoInde--2 .fondoIndex__parrafo--2 {
+    color: #fff;
+    font-size: 1.5em; }
+
+.fondo__recetas {
+  background: linear-gradient(to right, #706d6f4b, #22212146), url("../img/fotos/recetas/MUESTRAalfajor.jpg");
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 40% 20%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end; }
+  .fondo__recetas--card {
+    color: #fff;
+    border-radius: 5px;
+    background-color: #534f4f65;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 90vh;
+    height: auto;
+    padding: 2.5rem;
+    margin: 0 4rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .fondo__recetas--card h3 {
+      font-size: 2.5em;
+      margin-bottom: 1em; }
+    .fondo__recetas--card p {
+      color: #fff; }
+      .fondo__recetas--card p span {
+        font-weight: bold; }
+
+.fondo__recetas--distinto {
+  background: linear-gradient(to right, #706d6f4b, #22212146), url("../img/fotos/recetas/MUESTRA chipa.jpg");
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 40% 20%;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+  .fondo__recetas--distinto .fondo__recetas--card--distinto {
+    color: #fff;
+    border-radius: 5px;
+    background-color: #534f4f65;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 90vh;
+    height: auto;
+    padding: 2.5rem;
+    margin: 0 4rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .fondo__recetas--distinto .fondo__recetas--card--distinto h3 {
+      font-size: 2.5em;
+      margin-bottom: 1em; }
+    .fondo__recetas--distinto .fondo__recetas--card--distinto p {
+      color: #fff; }
+      .fondo__recetas--distinto .fondo__recetas--card--distinto p span {
+        font-weight: bold; }
+
+.fondito-#EDBB99 {
+  background-color: #EDBB99; }
+
+.fondito-#D9E0D9 {
+  background-color: #D9E0D9; }
+
+.fondito-#DAF7A6 {
+  background-color: #DAF7A6; }
+
+.fondito-#EC7063 {
+  background-color: #EC7063; }
+
+.h2varios-1 {
+  font-size: 31px; }
+
+.h2varios-2 {
+  font-size: 32px; }
+
+.h2varios-3 {
+  font-size: 33px; }
+
+.h2varios-4 {
+  font-size: 34px; }
+
+.h2varios-5 {
+  font-size: 35px; }
+
+.h2varios-6 {
+  font-size: 36px; }
+
+.h2varios-7 {
+  font-size: 37px; }
+
+.h2varios-8 {
+  font-size: 38px; }
+
+.h2varios-9 {
+  font-size: 39px; }
+
+.h2varios-10 {
+  font-size: 40px; }
+
+/*--------------------------------------------------------------
+# FONT SIZES
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS BAJO
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ESPACIOS ALTOS-TOP
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# AREA DE MIXIN
+--------------------------------------------------------------*/
+/*Para algunos H2*/
+/*BOTONES*/
+/*Fondos*/
+/*Footers*/
+/*Area de fuentes*/
+/*Display*/
+/*Tajetas de recetas*/
+.fondito-#EDBB99 {
+  background-color: #EDBB99; }
+
+.fondito-#D9E0D9 {
+  background-color: #D9E0D9; }
+
+.fondito-#DAF7A6 {
+  background-color: #DAF7A6; }
+
+.fondito-#EC7063 {
+  background-color: #EC7063; }
+
+.h2varios-1 {
+  font-size: 31px; }
+
+.h2varios-2 {
+  font-size: 32px; }
+
+.h2varios-3 {
+  font-size: 33px; }
+
+.h2varios-4 {
+  font-size: 34px; }
+
+.h2varios-5 {
+  font-size: 35px; }
+
+.h2varios-6 {
+  font-size: 36px; }
+
+.h2varios-7 {
+  font-size: 37px; }
+
+.h2varios-8 {
+  font-size: 38px; }
+
+.h2varios-9 {
+  font-size: 39px; }
+
+.h2varios-10 {
+  font-size: 40px; }
+
+/*index*/
+@media screen and (max-width: 900px) {
+  .banner {
+    height: 300px; }
+  .banner__pasteleriadeautor {
+    display: none; }
+  .banner__imagen {
+    display: none; }
+  .card {
+    margin-bottom: 20px; }
+  .articlesobremi .articlesobremi__tatiana {
+    width: auto;
+    height: 500px;
+    margin-bottom: 40px; }
+  .articlesobremi .articlesobremi__textoSobreMi {
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    margin-top: 20px; } }
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 35px !important;
+    /*si no le pongo !important no me cambia el tamaño*/ }
+  p {
+    font-size: 12px; }
+  li {
+    font-size: 12px; }
+  h4 {
+    font-size: 18px; }
+  .navbar-brand--distinto {
+    display: none; }
+  .banner__pasteleriadeautor {
+    display: none; }
+  .banner {
+    height: 250px; }
+  .contenedortestimonios {
+    font-size: 12px; }
+  .h3footer {
+    font-size: 12px; }
+  .navbar-nav {
+    font-size: 12px; }
+  .articlesobremi .articlesobremi__tatiana {
+    width: auto;
+    height: 380px; }
+  /*Galeria cakes*/
+  .itemText {
+    padding: 10px; }
+  .seccionFooterParrafos {
+    font-size: 12px;
+    margin-top: 20px; }
+  /*seccion para regalar img*/
+  .cakeRococo--distinto {
+    margin-left: 0px !important;
+    /*no me toma el cambio sin el !important*/
+    margin-top: 50px; }
+  /*seccion recetas*/
+  .cakeRococo {
+    margin-left: 0px !important;
+    /*no me toma el cambio sin el !important*/ }
+  img {
+    width: 300px; }
+  .divfooter {
+    font-size: 12px; }
+  .redescontainer {
+    margin-bottom: 20px; } }

@@ -1,0 +1,12 @@
+@each $color in $coloresVarios {
+    .fondito-#{$color} {
+        background-color: $color;
+    }
+}
+
+@for $i from 1 through 10 {
+    .h2varios-#{$i} {
+        font-size: 30px + $i;
+    }
+}
+
